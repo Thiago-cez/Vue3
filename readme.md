@@ -67,3 +67,11 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
  v-if
  v-else-if
  v-else
+
+## CLASS 5
+### Directive Loops
+
+ v-show
+ v-if
+ v-else-if
+ v-else
