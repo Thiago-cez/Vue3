@@ -60,4 +60,10 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 </style>
 ```
 
+## CLASS 4
+### Conditional Directive
 
+ v-show
+ v-if
+ v-else-if
+ v-else
