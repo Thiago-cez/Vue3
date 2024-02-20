@@ -76,5 +76,10 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ## CLASS 6
 ### Data Binding 
 
- v-bind
- 
+ v-bind 
+
+## CLASS 7
+### Data Binding 
+
+
+attributes Class e Dinamic Style
