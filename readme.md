@@ -72,4 +72,9 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ### Directive Loops
 
  v-for
+
+## CLASS 6
+### Data Binding 
+
+ v-bind
  
