@@ -71,7 +71,5 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ## CLASS 5
 ### Directive Loops
 
- v-show
- v-if
- v-else-if
- v-else
+ v-for
+ 
