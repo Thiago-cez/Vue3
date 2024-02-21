@@ -80,3 +80,8 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## CLASS 7
 ### attributes Class and Dinamic Style
+
+## CLASS 8
+### two way data-bind
+
+ v-model
