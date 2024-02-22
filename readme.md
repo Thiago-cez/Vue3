@@ -85,3 +85,8 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ### two way data-bind
 
  v-model
+
+## CLASS 9
+### Directive
+
+ v-on || @ => Short Format
