@@ -56,6 +56,27 @@
 
       <p> Voce escolheu: {{ frutaria }}</p>
     </div>
+
+    <div>
+      <h1> -- QUINTO EXEMPLO -- </h1>
+      <h4> -- computed  -- </h4>
+      <label> Nome Completo: {{ nomeCompleto }}</label>
+
+      <div>
+        <h2>todas as tarefas: </h2>
+        <div v-for="todo in allTodos"
+        :key="todo.id"
+        > <input type="checkbox" v-model="todo.completed">{{ todo.title }}</div>
+        </div>
+
+      <h2>Tarefas Incompletas: </h2>
+        <div v-for="todo in tarefasPendentes"
+        :key="todo.id"> {{ todo.title }}</div>
+      
+        <h2>Tarefas completas: </h2>
+        <div v-for="todo in tarefasConcluidas"
+        :key="todo.id"> {{ todo.title }}</div>
+    </div>
   
 </template>
 
@@ -73,10 +94,62 @@ export default {
          teste1: "Thiago Cezario",
          teste2: "",
          teste3: "",
-         frutaria: []
+         frutaria: [],
+         usuario: {
+                nome:"Thiago",
+                nomeMeio: "Cezario ",
+                ultimoNome:"da Silva",
+                idade: "55",
+                cpf: "43573949886"
+         },
+         todos: [
+                  {
+                    "userId": 1,
+                    "id": 1,
+                    "title": "delectus aut autem",
+                    "completed": false
+                  },
+                  {
+                    "userId": 1,
+                    "id": 2,
+                    "title": "quis ut nam facilis et officia qui",
+                    "completed": false
+                  },
+                  {
+                    "userId": 1,
+                    "id": 3,
+                    "title": "fugiat veniam minus",
+                    "completed": false
+                  },
+                  {
+                    "userId": 1,
+                    "id": 4,
+                    "title": "et porro tempora",
+                    "completed": true
+                  },
+                  {
+                    "userId": 1,
+                    "id": 5,
+                    "title": "laboriosam mollitia et enim quasi adipisci quia provident illum",
+                    "completed": false
+                  }
+                ]  
        }
-  }
-
+      },
+  computed:{
+    nomeCompleto() {
+      return `${this.usuario.nome} ${this.usuario.nomeMeio} ${this.usuario.ultimoNome}`
+    },
+    allTodos() {
+      return this.todos 
+    },
+    tarefasPendentes() {
+      return this.todos.filter(todo => !todo.completed) 
+    },
+    tarefasConcluidas() {
+      return this.todos.filter(todo => todo.completed) 
+    }
+}
 }
 </script>
 
