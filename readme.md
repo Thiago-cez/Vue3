@@ -90,3 +90,10 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ### Directive
 
  v-on || @ => Short Format
+
+## CLASS 10
+### computed properties
+
+computed: {
+  
+}
