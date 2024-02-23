@@ -97,3 +97,6 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 computed: {
   
 }
+
+## CLASS 11
+### watch - Observadores
