@@ -104,3 +104,14 @@ computed: {
 watch: {
 
 }
+
+## CLASS 12
+### Life Cycle Hooks
+  beforeCreate
+  created
+  beforeMount
+  mounted
+  beforeUpdate
+  updated
+  beforeUnmount
+  unmounted
