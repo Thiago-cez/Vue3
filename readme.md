@@ -100,3 +100,7 @@ computed: {
 
 ## CLASS 11
 ### watch - Observadores
+//Usado para observar campos e fazer ações secundarias.
+watch: {
+
+}

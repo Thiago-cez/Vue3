@@ -76,6 +76,16 @@
         <h2>Tarefas completas: </h2>
         <div v-for="todo in tarefasConcluidas"
         :key="todo.id"> {{ todo.title }}</div>
+      </div>
+
+        <div>
+        <h1> -- SEXTO EXEMPLO -- </h1>
+        <h4> -- WATCH()  -- </h4>
+         <input v-model="user.firstName"> <br>
+         <input v-model="user.SecondName"><br>{{ user.firstName}} {{ user.SecondName }}
+        <div>
+          
+      </div>
     </div>
   
 </template>
@@ -133,8 +143,12 @@ export default {
                     "title": "laboriosam mollitia et enim quasi adipisci quia provident illum",
                     "completed": false
                   }
-                ]  
-       }
+                ],  
+        user: {
+          firstName: "",
+          SecondName: ""
+        }
+        }
       },
   computed:{
     nomeCompleto() {
@@ -149,7 +163,16 @@ export default {
     tarefasConcluidas() {
       return this.todos.filter(todo => todo.completed) 
     }
-}
+  },
+
+  watch: {
+    user: {
+      handler(){
+        alert(`O novo nome é  ${this.user.firstName} ${this.user.SecondName}`)
+      },
+      deep: true
+    }
+  }
 }
 </script>
 
