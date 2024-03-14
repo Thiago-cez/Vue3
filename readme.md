@@ -90,3 +90,38 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ### Directive
 
  v-on || @ => Short Format
+
+## CLASS 10
+### computed properties
+
+computed: {
+  
+}
+
+## CLASS 11
+### watch - Observadores
+//Usado para observar campos e fazer ações secundarias.
+watch: {
+
+}
+
+## CLASS 12
+### Life Cycle Hooks
+  beforeCreate
+  created
+  beforeMount
+  mounted
+  beforeUpdate
+  updated
+  beforeUnmount
+  unmounted
+
+## CLASS 13
+### Component slot
+
+## CLASS 14
+### Scoped e global css
+
+## CLASS 15
+### props
+
