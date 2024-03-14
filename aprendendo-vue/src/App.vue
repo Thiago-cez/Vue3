@@ -1,6 +1,10 @@
 <template>
   
-  <AlertComponente variant="danger" />
+  <AlertComponente 
+  :variant="variant" 
+  @fechar="fecharAlerta()"
+  v-if="showAlert"
+  >{{ text}}</AlertComponente>
 </template>
 
 <script>
@@ -14,7 +18,17 @@ export default {
 },
 
   data() {
-      
+
+      return {
+        showAlert: true,
+        variant: "sucess",
+        text: "Enviado com Sucesso"
+      }      
+    },
+    methods: {
+      fecharAlerta(){
+        this.showAlert = false;
+      }
     }
 }
 </script>
