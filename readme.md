@@ -115,3 +115,13 @@ watch: {
   updated
   beforeUnmount
   unmounted
+
+## CLASS 13
+### Component slot
+
+## CLASS 14
+### Scoped e global css
+
+## CLASS 15
+### props
+
