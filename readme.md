@@ -124,4 +124,9 @@ watch: {
 
 ## CLASS 15
 ### props
+from father to child
+
+## CLASS 16
+### emits
+from child to father
 
